@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <Description />
+  <DataSet Name="PlayersDataSet">
+    <Query>
+      <DataSourceReference>AdventureWorksDB</DataSourceReference>
+      <CommandText>SELECT        PlayerID, PlayerName, BelongsTo, MatchPlayed, RunsMade, WicketsTaken, FeePerMatch
+FROM            tbl_Players</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="PlayerID">
+        <DataField>PlayerID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="PlayerName">
+        <DataField>PlayerName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="BelongsTo">
+        <DataField>BelongsTo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="MatchPlayed">
+        <DataField>MatchPlayed</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="RunsMade">
+        <DataField>RunsMade</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="WicketsTaken">
+        <DataField>WicketsTaken</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FeePerMatch">
+        <DataField>FeePerMatch</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

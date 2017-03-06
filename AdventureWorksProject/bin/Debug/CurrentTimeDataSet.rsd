@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <Description />
+  <DataSet Name="CurrentTimeDataSet">
+    <Query>
+      <DataSourceReference>IMOSDataSourceProdDB</DataSourceReference>
+      <CommandText>SELECT        GETDATE() AS CurrentTime</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="CurrentTime">
+        <DataField>CurrentTime</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
